@@ -1,0 +1,40 @@
+<!doctype html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NexMind - Understand Every Message</title>
+    <meta name="description" content="Understand Every Message. AI-powered NLP chatbot that analyzes emails, messages, reviews, complaints, and general text." />
+    <meta property="og:title" content="NexMind - Understand Every Message" />
+    <meta property="og:description" content="Understand Every Message. AI-powered NLP chatbot that analyzes emails, messages, reviews, complaints, and general text." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+    <script>
+      (function() {
+        try {
+          var t = localStorage.getItem("nexmind_theme");
+          if (!t) {
+            var s = localStorage.getItem("nexmind_app_settings_v1");
+            if (s) {
+              var p = JSON.parse(s);
+              t = p.theme;
+            }
+          }
+          if (t === "light") {
+            document.documentElement.classList.remove("dark");
+          } else {
+            document.documentElement.classList.add("dark");
+          }
+        } catch(e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-surface font-body-md text-on-surface antialiased transition-colors duration-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
